@@ -10,3 +10,13 @@ const io = require('socket.io')(server,{
 })
 
 app.use(cors())
+
+const PORT = process.envPORT || 5000
+
+app.get('/', (req, res) =>{
+    res.send(`Server is running on port: ${PORT}`)
+})
+
+server.listen(PORT, ()=>{
+    console.log(`Server is Listening on port: ${PORT}`)
+})
