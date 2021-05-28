@@ -14,8 +14,10 @@ function App() {
                         Vide Chat App
                     </Typography>
             </AppBar>
-            {/* Video Player */}
-            {/* Options => Notifications */}
+            <VideoPlayer />
+            <Options>
+                <Notifications />
+            </Options>
         </div>
     )
 }
