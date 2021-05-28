@@ -42,7 +42,7 @@ const VideoPlayer = () => {
             {/* Our video */}
             {
                 stream && (
-                    <Paper classname={classes.paper}>
+                    <Paper className={classes.paper}>
                         <Grid sx={12} md={6}>
                             <Typography variant="h5" gutterBottom>
                                 {name || 'Name'}
@@ -56,7 +56,7 @@ const VideoPlayer = () => {
             {/* User's video */}
             { 
                 callAccepted && !callEnded && (
-                    <Paper classname={classes.paper}>
+                    <Paper className={classes.paper}>
                         <Grid sx={12} md={6}>
                         <Typography variant="h5" gutterBottom>
                             {call.name || 'Name'}

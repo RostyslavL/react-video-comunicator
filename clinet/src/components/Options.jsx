@@ -55,7 +55,7 @@ const Options = ({children}) => {
     return (
         <Container className={classes.container}>
             <Paper className={classes.paper} elevation={10}> 
-                <form className={classes.root} noValidate autocomplete="off">
+                <form className={classes.root} noValidate autoComplete="off">
                     <Grid container className={classes.gridContainer}>
                         <Grid  item xs={12} md={6} className={classes.padding}> 
                             <Typography gutterBottom variant="h6"> Account Info </Typography>
@@ -89,7 +89,7 @@ const Options = ({children}) => {
                                     color="secondary" 
                                     startIcon={<PhoneDisabled fontSize="large"/>}
                                     fullWidth
-                                    onCklick={leaveCall}
+                                    onClick={leaveCall}
                                     className={classes.margin}
                                     >
                                    Hang Up
@@ -100,7 +100,7 @@ const Options = ({children}) => {
                                     color="primary" 
                                     startIcon={<Phone fontSize="large"/>}
                                     fullWidth
-                                    onCklick={() => callUser(idToCall)}
+                                    onClick={() => callUser(idToCall)}
                                     className={classes.margin}
                                     >
                                     Call
@@ -110,9 +110,8 @@ const Options = ({children}) => {
                         </Grid> 
                     </Grid>
                 </form>
+                {children}
             </Paper>
-            Options
-            {children}
         </Container>
     )
 }
