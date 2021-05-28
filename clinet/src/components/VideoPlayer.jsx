@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Notifications = () => {
+export const VideoPlayer = () => {
     return (
         <div>
             Video Player
