@@ -1,8 +1,9 @@
 import React from 'react'
-import {Typography, AppBar, makeStyles} from '@material-ui/core'
+import {Typography, AppBar} from '@material-ui/core'
 import VideoPlayer from './components/VideoPlayer'
 import Options from './components/Options'
 import Notifications from './components/Notifications'
+import { makeStyles} from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -38,7 +39,7 @@ function App() {
                 position="static" 
                 color="inherit">
                     <Typography variant="h2" align="center">
-                        Vide Chat App
+                        Video Chat App
                     </Typography>
             </AppBar>
             <VideoPlayer />
